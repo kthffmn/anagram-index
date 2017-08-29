@@ -4,8 +4,7 @@ def anagram_index(anagram)
 end
 
 def anagram_index_helper(letters, offset)
-  sorted_letters = letters.sort
-  index_of_first_letter = sorted_letters.index(letters[0])
+  index_of_first_letter = letters.sort.index(letters[0])
   anagram_length = letters.length
 
   number_of_indexes_per_branch = number_of_permutations(anagram_length) / anagram_length
