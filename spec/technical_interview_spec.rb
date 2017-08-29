@@ -45,4 +45,9 @@ describe "number_of_permutations" do
       expect(number_of_permutations(3)).to eq(6)
     end
   end
+  context "with 5" do
+    it "returns 120" do
+      expect(number_of_permutations(5)).to eq(120)
+    end
+  end
 end
