@@ -7,7 +7,7 @@ def anagram_index_helper(letters, offset)
   index_of_first_letter = letters.sort.index(letters[0])
   anagram_length = letters.length
 
-  number_of_indexes_per_branch = number_of_permutations(anagram_length) / anagram_length
+  number_of_indexes_per_branch = number_of_permutations(anagram_length - 1)
   number_of_indexes_skipped = number_of_indexes_per_branch * index_of_first_letter
   new_offset = offset + number_of_indexes_skipped
 
