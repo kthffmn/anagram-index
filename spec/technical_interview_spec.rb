@@ -27,10 +27,10 @@ describe "anagram_index" do
   end
 end
 
-describe "get_number_of_permutations" do
+describe "number_of_permutations" do
   context "with 3" do
     it "returns 6" do
-      expect(get_number_of_permutations(3)).to eq(6)
+      expect(number_of_permutations(3)).to eq(6)
     end
   end
 end

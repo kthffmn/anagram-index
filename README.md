@@ -1,1 +1,1 @@
-# Originate Technical Interview
+# Technical Interview
