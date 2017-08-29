@@ -25,6 +25,18 @@ describe "anagram_index" do
       expect(anagram_index("dcba")).to eq(23)
     end
   end
+
+  context "with edcba" do
+    it "returns 119" do
+      expect(anagram_index("edcba")).to eq(119)
+    end
+  end
+
+  context "with edcab" do
+    it "returns 118" do
+      expect(anagram_index("edcab")).to eq(118)
+    end
+  end
 end
 
 describe "number_of_permutations" do
